@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
+        'NAME': 'nkfnutrition',
         'USER' : 'postgres',
-        'PASSWORD' : '',
+        'PASSWORD' : 'admin',
         'HOST' : 'localhost'
     }
 }
