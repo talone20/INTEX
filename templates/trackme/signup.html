@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<form action="action_page.php" method="post" class="signupform">
+
+  <div class="container">
+    <!-- <label for="first_name"><b>First Name</b></label> -->
+    <input type="text" placeholder="Enter First Name" name="first_name" required>
+
+    <!-- <label for="last_name"><b>Last Name</b></label> -->
+    <input type="text" placeholder="Enter Last Name" name="last_name" required>
+
+    <button type="button">Create New Profile</button>
+    <div class="center" style="border: none;">
+      <a href="{% url 'login' %}">Already have an account? Login here</a>
+    </div>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+{% endblock %}
