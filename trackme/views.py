@@ -11,3 +11,9 @@ def indexPageView(request) :
 
 def myDataPageView(request) :
     return render(request, 'trackme/mydata.html')
+
+def loginPageView(request) : 
+    return render(request, 'trackme/login.html')
+
+def signupPageView(request) : 
+    return render(request, 'trackme/signup.html')
